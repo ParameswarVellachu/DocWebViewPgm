@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 //        self.viewPDF().
     }
     func viewPDF()  {
-        if let pdfURL = Bundle.main.url(forResource: "IT_Statement", withExtension: "pdf", subdirectory: nil, localization: nil)  {
+        if let pdfURL = Bundle.main.url(forResource: "Swift", withExtension: "pdf", subdirectory: nil, localization: nil)  {
             do {
                 let data = try Data(contentsOf: pdfURL)
 //                let webView = WKWebView(frame: CGRect(x:20,y:20,width:view.frame.size.width-40, height:view.frame.size.height-40))
