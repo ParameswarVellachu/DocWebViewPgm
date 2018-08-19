@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DocWebViewPgm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vqu-Mr-l4h">
+                                <rect key="frame" x="71" y="590" width="233" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7E-J9-aAQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
+                                        <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Web"/>
+                                        <connections>
+                                            <action selector="documentViewerClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I4M-E9-dcP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngr-ax-SXR">
+                                        <rect key="frame" x="36" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="PDF"/>
+                                        <connections>
+                                            <action selector="documentViewerClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z4i-sM-TN2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEA-Tu-5i5">
+                                        <rect key="frame" x="71" y="0.0" width="33" height="30"/>
+                                        <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="DOC"/>
+                                        <connections>
+                                            <action selector="documentViewerClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tlh-ig-LZB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kd-H3-ugX">
+                                        <rect key="frame" x="109" y="0.0" width="37" height="30"/>
+                                        <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Excel"/>
+                                        <connections>
+                                            <action selector="documentViewerClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BRg-e7-qkD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIm-oS-ki8">
+                                        <rect key="frame" x="151" y="0.0" width="82" height="30"/>
+                                        <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Power Point"/>
+                                        <connections>
+                                            <action selector="documentViewerClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Y3-B1-A0C"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4y-yF-s1d">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="572"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="572" id="dC5-xX-RQV"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="z4y-yF-s1d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="H9b-rf-8ra"/>
+                            <constraint firstItem="Vqu-Mr-l4h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NIg-FM-sWi"/>
+                            <constraint firstItem="Vqu-Mr-l4h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="271.5" id="Soc-1N-Wbr"/>
+                            <constraint firstItem="z4y-yF-s1d" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="bJM-Ko-Sh1"/>
+                            <constraint firstItem="z4y-yF-s1d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dQT-Hz-iZa"/>
+                            <constraint firstItem="z4y-yF-s1d" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="spL-3f-3jp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="z4y-yF-s1d" id="NvH-RH-PRu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
