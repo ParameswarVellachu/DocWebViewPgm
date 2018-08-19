@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 //        self.viewMSDocument()
-//        self.viewPDF()
+//        self.viewPDF().
     }
     func viewPDF()  {
         if let pdfURL = Bundle.main.url(forResource: "IT_Statement", withExtension: "pdf", subdirectory: nil, localization: nil)  {
