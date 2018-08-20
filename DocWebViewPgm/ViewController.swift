@@ -43,9 +43,18 @@ class ViewController: UIViewController {
     
     @IBAction func documentViewerClicked(_ sender: UIButton) {
         if sender.tag == 0 {
-            // PDF
-            let url = URL(string: "http://ccidahra.com/wp-content/uploads/2016/03/sample.ppt")
-//            let url = URL(string: "https://www.tutorialspoint.com/ios/ios_tutorial.pdf")
+//            let url = URL(string: "http://192.168.1.218:9093/FileUploads/ContentFiles/2018-18-6--02-49-16_Environmental%20Science.doc") //DOC
+//            let url = URL(string: "http://192.168.1.218:9093/FileUploads/ContentFiles/2018-18-6--02-51-07_3m-MAGNETIC-EFFECTS-OF-CURRENT-MAGNETISM.pdf") //PDF
+//            let url = URL(string: "http://192.168.1.218:9093/FileUploads/ContentFiles/2018-18-6--02-51-08_5%20Must-Do%E2%80%99s%20for%20Employee%20Onboarding.mp3") //Audio
+
+//            let url = URL(string: "http://192.168.1.218:9093/FileUploads/ContentFiles/2018-18-6--02-49-16_New%20Invention%20MATRIX%20-%20The%20Internet%20of%20Things%20for%20Everyone%E2%84%A2.mp4") //Video
+            
+            
+//            let url = URL(string: "http://192.168.1.218:9093/FileUploads/ContentFiles/2018-19-6--06-02-30_Raghav%20testing.ods") //ODs
+
+            
+            let url = URL(string: "https://scholar.harvard.edu/files/torman_personal/files/samplepptx.pptx") //PPT
+            
             let requestObj = URLRequest(url: url! as URL)
             self.webView.load(requestObj)
 
