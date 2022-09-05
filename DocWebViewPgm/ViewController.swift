@@ -4,7 +4,6 @@
 //
 //  Created by Veera Reddy on 8/18/18.
 //  Copyright © 2018 Parameswaran. All rights reserved.
-//
 
 import UIKit
 import WebKit
